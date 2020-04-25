@@ -46,6 +46,8 @@
             this.weatherIconBox = new System.Windows.Forms.PictureBox();
             this.humidityOutput = new System.Windows.Forms.Label();
             this.humidityLabel = new System.Windows.Forms.Label();
+            this.updateOutput = new System.Windows.Forms.Label();
+            this.updateLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.weatherIconBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -231,12 +233,34 @@
             this.humidityLabel.TabIndex = 49;
             this.humidityLabel.Text = "Humidity:";
             // 
+            // updateOutput
+            // 
+            this.updateOutput.BackColor = System.Drawing.Color.Transparent;
+            this.updateOutput.ForeColor = System.Drawing.Color.White;
+            this.updateOutput.Location = new System.Drawing.Point(118, 348);
+            this.updateOutput.Name = "updateOutput";
+            this.updateOutput.Size = new System.Drawing.Size(113, 13);
+            this.updateOutput.TabIndex = 52;
+            // 
+            // updateLabel
+            // 
+            this.updateLabel.AutoSize = true;
+            this.updateLabel.BackColor = System.Drawing.Color.Transparent;
+            this.updateLabel.ForeColor = System.Drawing.Color.White;
+            this.updateLabel.Location = new System.Drawing.Point(23, 348);
+            this.updateLabel.Name = "updateLabel";
+            this.updateLabel.Size = new System.Drawing.Size(68, 13);
+            this.updateLabel.TabIndex = 51;
+            this.updateLabel.Text = "Last Update:";
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.updateOutput);
+            this.Controls.Add(this.updateLabel);
             this.Controls.Add(this.humidityOutput);
             this.Controls.Add(this.humidityLabel);
             this.Controls.Add(this.weatherIconBox);
@@ -283,5 +307,7 @@
         private System.Windows.Forms.PictureBox weatherIconBox;
         private System.Windows.Forms.Label humidityOutput;
         private System.Windows.Forms.Label humidityLabel;
+        private System.Windows.Forms.Label updateOutput;
+        private System.Windows.Forms.Label updateLabel;
     }
 }

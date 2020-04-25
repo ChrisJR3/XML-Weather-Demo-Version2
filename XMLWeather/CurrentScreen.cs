@@ -30,6 +30,7 @@ namespace XMLWeather
             dateOutput.Text = Form1.days[0].date;
             conditionsOutput.Text = Form1.days[0].icon;
             humidityOutput.Text = Form1.days[0].humidity + "%";
+            updateOutput.Text = Convert.ToDateTime(Form1.days[0].update).ToString("hh : mm"); ;
 
             //Deciding the icon and the background image
             //So that the images fin in the picture box
@@ -138,6 +139,9 @@ namespace XMLWeather
                 conditionsOutput.ForeColor = Color.Black;
                 humidityLabel.ForeColor = Color.Black;
                 humidityOutput.ForeColor = Color.Black;
+
+                updateLabel.ForeColor = Color.Black;
+                updateOutput.ForeColor = Color.Black;
             }
             else if (brightness == "Light")
             {

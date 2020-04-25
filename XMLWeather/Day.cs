@@ -8,7 +8,7 @@ namespace XMLWeather
     public class Day
     {
         public string date, currentTemp, currentTime, condition, location, tempHigh, tempLow, 
-            windSpeed, windDirection, precipitation, visibility, icon, humidity;
+            windSpeed, windDirection, precipitation, visibility, icon, humidity, update;
 
         /// <summary>
         /// This will create a blank day object where all values are set to "" initially
@@ -16,7 +16,7 @@ namespace XMLWeather
         public Day()
         {
             date = currentTemp = currentTime = condition = location = tempHigh = tempLow
-                = windSpeed = windDirection = precipitation = visibility = icon = humidity = "";
+                = windSpeed = windDirection = precipitation = visibility = icon = humidity = update = "";
         }
     }
 }

@@ -83,6 +83,10 @@ namespace XMLWeather
             // getting the humidity and the percent
             reader.ReadToFollowing("humidity");
             days[0].humidity = reader.GetAttribute("value");
+
+            //find the last time of update
+            reader.ReadToFollowing("lastupdate");
+            days[0].update = reader.GetAttribute("value");
         }
 
         private void Form1_Load(object sender, EventArgs e)
